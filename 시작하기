@@ -1,0 +1,27 @@
+ npm create vite@latest myapp -- --template react
+
+
+http://localhost:5173/
+
+
+cd .\myapp\
+npm install
+npm run dev
+
+
+supabase
+https://supabase.com/dashboard/organizations
+
+https://supabase.com/dashboard/project/rfybygrdmqclakdamatk/integrations/data_api/docs?resource=todos
+
+
+
+ㅇ 배포하기
+
+Vite + React 프로젝트 GitHub pages에 자동 배포 설정법 - 코딩루팡
+https://www.youtube.com/watch?v=yUWuNKHvHFM
+
+
+git init
+
+PS C:\demo\react_demo\meta_code\myapp> git init
