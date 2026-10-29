@@ -1,0 +1,173 @@
+.page {
+  display: grid;
+  min-height: 100svh;
+  padding: 24px;
+  place-items: center;
+  box-sizing: border-box;
+}
+
+.todo-card {
+  width: min(100%, 360px);
+  padding: 16px;
+  border: 1px solid #ececec;
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 0 2px 8px rgb(0 0 0 / 10%);
+  box-sizing: border-box;
+}
+
+.todo-header {
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+.todo-header h1 {
+  margin: 0;
+  color: #333;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.todo-header h1 span {
+  margin-right: 2px;
+}
+
+.todo-header p {
+  margin: 3px 0 0;
+  color: #999;
+  font-size: 11px;
+}
+
+.todo-form {
+  display: grid;
+  gap: 6px;
+}
+
+.todo-form input {
+  width: 100%;
+  min-width: 0;
+  height: 32px;
+  padding: 0 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  color: #444;
+  font: inherit;
+  font-size: 12px;
+  box-sizing: border-box;
+}
+
+.todo-form input::placeholder {
+  color: #bbb;
+}
+
+.todo-form input:focus {
+  border-color: #5d8edc;
+  outline: 2px solid rgb(93 142 220 / 18%);
+}
+
+.todo-form button {
+  min-height: 30px;
+  border: 0;
+  border-radius: 5px;
+  background: #5d8edc;
+  color: #fff;
+  font: inherit;
+  font-size: 12px;
+  cursor: pointer;
+  transition: background-color 120ms ease;
+}
+
+.todo-form button:hover {
+  background: #4b7fce;
+}
+
+.todo-form button:focus-visible,
+.delete-button:focus-visible {
+  outline: 2px solid #315fa8;
+  outline-offset: 2px;
+}
+
+.todo-list {
+  display: grid;
+  gap: 5px;
+  margin: 10px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.todo-item {
+  display: flex;
+  min-height: 36px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 8px;
+  border: 1px solid #e8e8e8;
+  border-radius: 5px;
+}
+
+.todo-label {
+  display: flex;
+  min-width: 0;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.todo-label input {
+  width: 14px;
+  height: 14px;
+  margin: 0;
+  accent-color: #5d8edc;
+  cursor: pointer;
+}
+
+.todo-text {
+  overflow: hidden;
+  color: #555;
+  font-size: 12px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.todo-text.completed {
+  color: #aaa;
+  text-decoration: line-through;
+}
+
+.delete-button {
+  display: grid;
+  width: 24px;
+  height: 28px;
+  flex: 0 0 auto;
+  place-items: center;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: #aaa;
+  cursor: pointer;
+}
+
+.delete-button:hover {
+  color: #e05a5a;
+}
+
+.delete-button svg {
+  width: 13px;
+  height: 13px;
+  fill: none;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 1.7;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  clip-path: inset(50%);
+}

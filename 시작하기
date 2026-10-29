@@ -1,0 +1,64 @@
+ npm create vite@latest myapp -- --template react
+
+
+http://localhost:5173/
+
+
+cd .\myapp\
+npm install
+npm run dev
+
+
+supabase
+https://supabase.com/dashboard/organizations
+
+https://supabase.com/dashboard/project/rfybygrdmqclakdamatk/integrations/data_api/docs?resource=todos
+
+
+
+ㅇ 배포하기
+
+Vite + React 프로젝트 GitHub pages에 자동 배포 설정법 - 코딩루팡
+https://www.youtube.com/watch?v=yUWuNKHvHFM
+
+
+git init
+
+PS C:\demo\react_demo\meta_code\myapp> git init
+
+
+
+https://github.com/tigerkim072-mobius/todo_board/settings/pages
+
+
+레포지토리 생성 : todo_board
+
+ㅇ 빌드
+https://www.youtube.com/watch?v=2fpr_Onewpg
+
+
+- vite.config.js
+import react from '@vitejs/plugin-react'
+import { defineConfig } from 'vite'
+
+// https://vite.dev/config/
+export default defineConfig({
+  plugins: [react()],
+  build: {
+    outDir: 'docs',
+  },
+})
+
+
+
+
+npm run build
+
+
+ㅇ 깃허브에 업로드
+cd PS C:\demo\react_demo\meta_code\myapp>
+git config --global user.name "tigerkim072-mobius"
+git config --global user.name "tigerkim072@gmail.com"
+
+
+git init
