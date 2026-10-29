@@ -61,4 +61,14 @@ git config --global user.name "tigerkim072-mobius"
 git config --global user.name "tigerkim072@gmail.com"
 
 
+
+
+
+(코딩루팡) 
+Vite + React 프로젝트 GitHub pages에 자동 배포 설정법
+https://www.youtube.com/watch?v=yUWuNKHvHFM
+
+
+
 git init
+Reinitialized existing Git repository in C:/demo/react_demo/meta_code/myapp/.git/
