@@ -71,4 +71,71 @@ https://www.youtube.com/watch?v=yUWuNKHvHFM
 
 
 git init
+--------------------------------------
 Reinitialized existing Git repository in C:/demo/react_demo/meta_code/myapp/.git/
+
+
+git remote add origin https://github.com/tigerkim072-mobius/todo_board.git
+--------------------------------------
+
+
+git add --all .
+--------------------------------------
+
+warning: in the working copy of 'docs/assets/index-CGrUN7l0.css', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'docs/assets/index-CdQzKyLY.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'docs/index.html', LF will be replaced by CRLF the next time Git touches it
+
+
+git commit -m "init"
+--------------------------------------
+
+
+git push origin <---- 에러남
+--------------------------------------
+ 
+ 
+ fatal: The current branch master has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin master
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+
+git push --set-upstream origin master
+--------------------------------------
+
+info: please complete authentication in your browser...
+Enumerating objects: 81, done.
+Counting objects: 100% (81/81), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (78/78), done.
+Writing objects: 100% (81/81), 204.04 KiB | 4.53 MiB/s, done.
+Total 81 (delta 6), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (6/6), done.
+remote:
+remote: Create a pull request for 'master' on GitHub by visiting:
+remote:      https://github.com/tigerkim072-mobius/todo_board/pull/new/master
+remote:
+To https://github.com/tigerkim072-mobius/todo_board.git
+ * [new branch]      master -> master
+branch 'master' set up to track 'origin/master'.
+
+
+
+
+
+
+
+
+
+
+
+
+https://ko.vite.dev/guide/
+--------------------------------------
+
+정적웹페이지 배포하기
+https://ko.vite.dev/guide/static-deploy#github-pages
